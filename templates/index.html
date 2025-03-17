@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Check</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Patient Details</h2>
+        <form action="/predict" method="post">
+            Age: <input type="text" name="age" required><br>
+            Blood Pressure: <input type="text" name="blood_pressure" required><br>
+            Cholesterol: <input type="text" name="cholesterol" required><br>
+            Glucose: <input type="text" name="glucose" required><br>
+            Body Temperature: <input type="text" name="body_temperature" required><br>
+            <input type="submit" value="Check Disease Status">
+        </form>
+    </div>
+</body>
+</html>
